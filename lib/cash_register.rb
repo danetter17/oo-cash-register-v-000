@@ -26,14 +26,6 @@ class CashRegister
     end
   end
   
-  def items
-    cart = []
-    add_item.each do |item|
-      cart << item
-    end
-    cart
-  end
-  
   def void_last_transaction
     @total -= @price
   end
